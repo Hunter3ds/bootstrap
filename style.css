@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@1,700&family=Poppins:wght@100;700&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+
+#titulo{
+    font-family: 'Poltawski Nowy', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.anima{
+    font-size: 18pt;
+    display: inline-block;
+    border-right: 2px solid #000;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    animation: escrever 5s steps(90, end) forwards, pisca 0.8s infinite;
+    translate: translate(-50%, -50%);
+    position: absolute;
+}
+
+@keyframes escrever {
+    0%{
+        max-width: 0;
+    }
+    100%{
+        max-width: 100%;
+    }
+}
+@keyframes pisca {
+    0%{
+        border-right-color: transparent;
+    }
+    50%{
+        border-right-color: transparent;
+    }
+    100%{
+        border-right-color: #000;
+    }
+}
+
+.container-conteudo{
+    font-size: 1.5rem;
+    margin-inline: auto;
+    width: min(60ch, 100%);
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+}
+.container-conteudo h2{
+    text-align: center;
+}
+.container-conteudo img{
+    max-width: 80%;
+    
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
